@@ -32,8 +32,8 @@ function getDataFromApi(searchTerm, callback) {
 
 function renderResult(result) {
   var template = $(RESULT_HTML_TEMPLATE);
-  template.find(".js-result-name").text(result.id_str);
-  template.find(".js-user-name").text(result.text);
+  template.find(".js-result-name").text(result.text);
+  template.find(".js-user-name").text(result.id_str);
   template.find(".js-watchers-count").text(result.created_at);
   template.find(".js-issues-count").text(result.place);
   return template;
