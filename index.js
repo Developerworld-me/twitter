@@ -6,7 +6,7 @@ var RESULT_HTML_TEMPLATE = (
   '<div>' +
     '<h2>' +
     '<span class="js-result-name"></span> by <span class="js-user-name"></span></h2>' +
-  '<img id="photo" src= "" >' +
+  '<h3>'+'<img id="photo" src= "" >' +'<span class='js-descriptioon'</span></h3>'+
     '<font size="5"><p>Time of Tweet 🕑:<span class="js-watchers-count"></span></p></font>' + 
     '<font size="5"><p>place 🌏: <span class="js-issues-count"></span></p></font>' +
   '</div>'
@@ -36,6 +36,7 @@ function renderResult(result) {
   template.find(".js-result-name").text(result.text);
   template.find(".js-user-name").text(result.user.name);
   template.find('#photo').attr("src",result.user.profile_image_url);
+  template.find('.js-description').text(result.user.description);
   template.find(".js-watchers-count").text(result.created_at);
   template.find(".js-issues-count").text(result.user.location);
   return template;
