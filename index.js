@@ -5,7 +5,7 @@ var hh= {'Authorization':'Bearer AAAAAAAAAAAAAAAAAAAAAA2Y5wAAAAAA9waG9%2FayTP7ws
 var RESULT_HTML_TEMPLATE = (
   '<div>' +
     '<h2>' +
-    '<span class="js-user-name"></span> by <span class="js-result-name"></span></h2>' +
+    '<span class="js-result-name"></span> by <span class="js-user-name"></span></h2>' +
     '<p>Time of Tweet<span class="js-watchers-count"></span></p>' + 
     '<p>place <span class="js-issues-count"></span></p>' +
   '</div>'
