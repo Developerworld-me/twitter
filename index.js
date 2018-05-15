@@ -7,8 +7,8 @@ var RESULT_HTML_TEMPLATE = (
     '<h2>' +
     '<span class="js-result-name"></span> by <span class="js-user-name"></span></h2>' +
   '<img id="photo" src= "" >' +
-    '<font size="3"><p>Time of Tweet 🕑:<span class="js-watchers-count"></span></p></font>' + 
-    '<font size="3"><p>place 🌏: <span class="js-issues-count"></span></p></font>' +
+    '<font size="5"><p>Time of Tweet 🕑:<span class="js-watchers-count"></span></p></font>' + 
+    '<font size="5"><p>place 🌏: <span class="js-issues-count"></span></p></font>' +
   '</div>'
 );
 
