@@ -6,8 +6,8 @@ var RESULT_HTML_TEMPLATE = (
   '<div>' +
     '<h2>' +
     '<span class="js-result-name"></span> by <span class="js-user-name"></span></h2>' +
-    '<font size="3"><p>Time of Tweet<span class="js-watchers-count"></span></p></font>' + 
-    '<font size="3"><p>place <span class="js-issues-count"></span></p></font>' +
+    '<font size="3"><p>Time of Tweet 🕑:<span class="js-watchers-count"></span></p></font>' + 
+    '<font size="3"><p>place 🌏: <span class="js-issues-count"></span></p></font>' +
   '</div>'
 );
 
