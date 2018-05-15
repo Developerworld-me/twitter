@@ -37,7 +37,7 @@ function renderResult(result) {
   template.find(".js-user-name").text(result.user.name);
   template.find('#photo').attr("src",result.user.profile_image_url);
   template.find(".js-watchers-count").text(result.created_at);
-  template.find(".js-issues-count").text(result.place);
+  template.find(".js-issues-count").text(result.user.location);
   return template;
 }
 
