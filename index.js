@@ -21,12 +21,12 @@ function getDataFromApi(searchTerm, callback) {
       query: searchTerm,
       maxResults: 100,
       fromDate: 201805010000,
-      toDate:201805100000
+      toDate:201805140000
     },
     
     success: callback
   };
-  $.ajax(settings);
+  $.ajax(settings).done(function (response){console.log(response)});;
 }
 
 
