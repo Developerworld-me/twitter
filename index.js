@@ -41,7 +41,7 @@ function renderResult(result) {
 }
 
 function displayGitHubSearchData(data) {
-  var results = data.results.map(function(item, index) {
+  var results = data.statuses.map(function(item, index) {
     return renderResult(item);
   });
   $('.js-search-results').html(results);
