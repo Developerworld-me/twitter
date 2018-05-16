@@ -7,7 +7,7 @@
       "type": "circle"
     },
     "size": {
-      "value": 10,
+      "value": 2,
       "random": true
     },
     "line_linked": {
