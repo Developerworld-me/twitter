@@ -1,4 +1,4 @@
-var GITHUB_SEARCH_URL = 'https://cors-anywhere.herokuapp.com/https://api.twitter.com/1.1/tweets/search/30day/dev.json?';
+var GITHUB_SEARCH_URL = 'https://cors-anywhere.herokuapp.com/https://api.twitter.com/1.1/search/tweets.json?';
 var hh= {'Authorization':'Bearer AAAAAAAAAAAAAAAAAAAAAA2Y5wAAAAAA9waG9%2FayTP7wsxdBU5OuaJN8mIg%3DDA0fEoNguBHze10Tb9i72RunLr4lVVrqUNF8Ceiqpr20aJiTB0'};
 
 
@@ -19,10 +19,9 @@ function getDataFromApi(searchTerm, callback) {
     dataType: 'json',
     type: 'GET',
     data: {
-      query: searchTerm,
-      maxResults: 100,
-      fromDate: 201805010000,
-      toDate:201805140000
+      q: searchTerm,
+      result_type: popular,
+      count: 50
     },
     
     success: callback
