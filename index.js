@@ -20,8 +20,7 @@ function getDataFromApi(searchTerm, callback) {
     type: 'GET',
     data: {
       q: searchTerm,
-      result_type="popular",
-      count: 50
+      count: 80
     },
     
     success: callback
